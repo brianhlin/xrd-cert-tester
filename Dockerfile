@@ -1,4 +1,4 @@
-FROM hub.opensciencegrid.org/opensciencegrid/xrootd-standalone:23-release
+FROM hub.opensciencegrid.org/opensciencegrid/xrootd-standalone:23-testing
 
 COPY refresh-certs.sh /usr/local/bin/
 

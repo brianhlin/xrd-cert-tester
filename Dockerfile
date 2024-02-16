@@ -1,8 +1,8 @@
-FROM hub.opensciencegrid.org/opensciencegrid/xrootd-standalone:23-release
+FROM hub.opensciencegrid.org/opensciencegrid/xrootd-standalone:3.6-testing
 
 COPY refresh-certs.sh /usr/local/bin/
 
-RUN yum install -y git && \
+RUN yum install -y git python3 && \
     git clone https://github.com/opensciencegrid/osg-ca-generator /src && \
     /usr/local/bin/refresh-certs.sh && \
     # this is oss.localroot

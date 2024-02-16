@@ -5,11 +5,11 @@ This container is designed to reproduce issues with XRootD's host refreshing cod
 
 1.   Build the container:
 
-            podman build -t xrd-cert-tester .
+            podman build -t xrd-cert-tester:el7-5.6.7 .
 
 1.   Start the container:
 
-            podman run -d --name tester xrd-cert-tester
+            podman run -d --name tester xrd-cert-tester:el7-5.6.7
 
 1.   Enter the container:
 
